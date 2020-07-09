@@ -9,7 +9,7 @@ class _00_SortedArrayCheckerTest {
 	@Test
 	void testIntArray() {
 		int[] unsorted = {3, 2, 9, 3, 1, 0};
-		int[] sorted = {0, 1, 2, 2, 3, 4};
+		int[] sorted = {0, 1, 2, 3, 4, 5};
 		
 		assertFalse(_00_SortedArrayChecker.intArraySorted(unsorted));
 		assertTrue(_00_SortedArrayChecker.intArraySorted(sorted));
