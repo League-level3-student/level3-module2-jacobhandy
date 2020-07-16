@@ -12,7 +12,14 @@ public class SelectionSorter extends Sorter {
 		//1. make a for loop to iterate through all but the last 
 		//   element of the array
 		for(int a = 0; a < array.length - 2; a++) {
-			
+			int index = a;
+			for(int i = a + 1; i < array.length; i++) {
+				if(array[i] < array[index]) {
+					index = i;
+					array[index] = array[a];
+				}
+			}
+			display.updateDisplay();
 		}
 			//2. create an integer called index and set it equal to i
 			
