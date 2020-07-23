@@ -11,7 +11,7 @@ public class _00_LinearSearch {
 		//   If the value is not found in the array, return -1.
 		Boolean found = false;
 		int re = -1;
-		for(int a = 0; a < words.length -1; a++) {
+		for(int a = 0; a < words.length; a++) {
 			if(words[a].equals(value)) {
 				found = true;
 				re = a;
