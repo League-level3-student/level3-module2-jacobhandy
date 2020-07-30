@@ -42,11 +42,27 @@ class _04_SearchTest {
 	public void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
+		_02_InterpolationSearch joe= new _02_InterpolationSearch();
+		int[] array = new int[3];
+		array[0] = 2;
+		array[1] = 4;
+		array[2] = 6;
+		assertEquals(0, joe.interpolationSearch(array, 2));
+		assertEquals(1, joe.interpolationSearch(array, 4));
+		assertEquals(2, joe.interpolationSearch(array, 6));
 	}
 	
 	@Test
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		_03_ExponentialSearch search = new _03_ExponentialSearch();
+		int[] array = new int[4];
+		array[0] = 0;
+		array[1] = 1;
+		array[2] = 2;
+		assertEquals(0, search.exponentialSearch(array, 0));
+		assertEquals(1, search.exponentialSearch(array, 1));
+		assertEquals(2, search.exponentialSearch(array, 2));
 	}
 }

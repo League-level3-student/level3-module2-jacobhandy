@@ -8,11 +8,14 @@ public class RecursionMath {
 	
 	public static int recursiveMultiplication(int number, int times) {
 		//2. if times is 1 
-			//3. return number 
+		if(times == 1) {
+			return number;
+		}
+		//3. return number 
 		
 		//4. else return number + recursionMultiplication(number, times-1)
 		
-		return 0;
+		return number + recursiveMultiplication(number, times-1);
 	}
 	
 	//6. Try this one on your own! 
